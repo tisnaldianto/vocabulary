@@ -481,5 +481,319 @@ table, th, td {
 </tr>
 </table>
 
+<hr></hr>
+
+<h1>Parts of Speech Quiz</h1>
+
+<p>
+
+<form name="quiz">
+
+<p>
+
+<h3>Tentukan Part of Speech yang tepat untuk setiap kata yang digaris bawah dengan 
+  menjawab dengan jawaban yang tersedia.</h3>
+  
+<b>Question 1.
+
+<br>A school is the place where students ... with their teachers.<br></b>
+
+<blockquote>
+
+<input type="radio" name="q1" value="teach">Teach<br>
+
+<input type="radio" name="q1" value="work">Work<br>
+
+<input type="radio" name="q1" value="play">Play<br>
+
+<input type="radio" name="q1" value="study">Study<br>
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 2.
+
+  <br>Bunga is celebrating her birthday. Now Bunga feels ... .<br></b>
+
+<blockquote>
+
+<input type="radio" name="q2" value="happy">Happy<br>
+
+<input type="radio" name="q2" value="easy">Easy<br>
+
+<input type="radio" name="q2" value="angry">Angry<br>
+
+<input type="radio" name="q2" value="hungry">Hungry<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 3.
+
+  <br>There is a clown in my friend's birthday party. He is very ... . 
+	He makes all the children laugh.<br></b>
+
+<blockquote>
+
+<input type="radio" name="q3" value="angry">Angry<br>
+
+<input type="radio" name="q3" value="noisy">Noisy<br>
+
+<input type="radio" name="q3" value="funny">Funny<br>
+
+ <input type="radio" name="q3" value="quiet">Quiet<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 4.
+
+  <br>My little sister and brother are very hungry.
+	So I ... lunch for them.<br></b>
+
+<blockquote>
+
+<input type="radio" name="q4" value="prepare">Prepare<br>
+
+<input type="radio" name="q4" value="wear">Wear<br>
+
+<input type="radio" name="q4" value="throw">Throw<br>
+  
+ <input type="radio" name="q4" value="kick">Kick<br>
+
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 5.
+
+  <br>Tina's bicycle is broken. Tina is really ... now.br></b>
+
+<blockquote>
+
+<input type="radio" name="q5" value="charm">Charm<br>
+
+<input type="radio" name="q5" value="happy">Happy<br>
+
+<input type="radio" name="q5" value="sad">Sad<br>
+
+  <input type="radio" name="q5" value="confused">Confused<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 6.
+
+  <br>My sister is a nurse. She works in Anak Bunda Hospital. She ... every patient there.<br></b>
+
+<blockquote>
+
+<input type="radio" name="q6" value="sees">Sees<br>
+
+<input type="radio" name="q6" value="thinks">Thinks<br>
+
+<input type="radio" name="q6" value="ignores">Ignores<br>
+  
+ <input type="radio" name="q6" value="helps">Helps<br>
+
+
+</blockquote>
+
+<p><b>
+
+Question 7.
+
+  <br>The exam was too ... for her. She got an A!<br></b>
+
+<blockquote>
+
+<input type="radio" name="q7" value="easy">Easy<br>
+
+<input type="radio" name="q7" value="expensive">Expensive<br>
+
+<input type="radio" name="q7" value="difficult">Difficult<br>
+
+  <input type="radio" name="q7" value="high">High<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 8.
+
+  <br>Linda did not study hard enough, so she did not ... the exam<br></b>
+
+<blockquote>
+
+<input type="radio" name="q8" value="study">Study<br>
+
+<input type="radio" name="q8" value="pass">Pass<br>
+
+<input type="radio" name="q8" value="break">Break<br>
+  
+ <input type="radio" name="q8" value="go">Go<br>
+
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 9.
+
+  <br>Candy is ... . But honey is sweeter than candy.
+<br></b>
+
+<blockquote>
+
+<input type="radio" name="q9" value="sweet">Sweet<br>
+
+<input type="radio" name="q9" value="salty">Salty<br>
+
+<input type="radio" name="q9" value="sour">Sour<br>
+  
+  <input type="radio" name="q9" value="smooth">Smooth<br>
+
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 10.
+
+  <br>Thomas ... the competition in a Natinonal Olympic. He looks very  happy.
+<br></b>
+
+<blockquote>
+
+<input type="radio" name="q10" value="jumped">Jumped<br>
+
+<input type="radio" name="q10" value="lost">Lost<br>
+
+<input type="radio" name="q10" value="celebrated">Celebrated<br>
+  
+  <input type="radio" name="q10" value="won">Won<br>
+
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+<input type="button"value="Grade Me"onClick="getScore(this.form);">
+
+<input type="reset" value="Clear"><p>
+
+Number of score out of 10 = <input type= text size 15 name= "mark">
+
+Score in percentage = <input type=text size=15 name="percentage"><br>
+
+</form>
+
+<p>
+
+<form method="post" name="Form" onsubmit="" action="">
+
+</form>
+
+</body>
+
+<script>
+
+var numQues = 10;
+
+var numChoi = 4;
+
+var answers = new Array(15);
+
+answers[0] = "study";
+
+answers[1] = "happy";
+
+answers[2] = "funny";
+
+answers[3] = "prepare";
+
+answers[4] = "sad";
+
+answers[5] = "helps";
+
+answers[6] = "easy";
+
+answers[7] = "pass";
+
+answers[8] = "sweet";
+
+answers[9] = "won";
+
+function getScore(form) {
+
+var score = 0;
+
+var currElt;
+
+var currSelection;
+
+for (i=0; i<numQues; i++) {
+
+currElt = i*numChoi;
+
+answered=false;
+
+for (j=0; j<numChoi; j++) {
+
+currSelection = form.elements[currElt + j];
+
+if (currSelection.checked) {
+
+answered=true;
+
+if (currSelection.value == answers[i]) {
+
+score++;
+
+break;
+
+}
+
+}
+
+}
+
+if (answered ===false){alert("Do answer all the questions, please.") ;return false;}
+
+}
+
+var scoreper = Math.round(score/numQues*100);
+
+form.percentage.value = scoreper + "%";
+
+form.mark.value=score;
+
+}
+
+</script>
+
+
 </body>
 </html>
